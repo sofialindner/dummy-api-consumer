@@ -1,0 +1,25 @@
+<div id="page-container">
+    <app-sidebar></app-sidebar>
+
+    <div id="main-container">
+        <div class="card">
+            <h2>Pesquisa por funcionário</h2>
+            <hr>
+            
+            <div style="display:flex">
+                <form id="barra-pesquisa">
+                    <img src="../../../assets/imgs/search.png" class="icon icon-btn">
+                    <input id="input-pesquisa" (keyup.enter)="searchEmployee($event)" type="search" placeholder="Pesquise pelo funcionário">
+                </form>
+            </div>
+        
+            <div style="text-align: right; width: 100%">
+                <div id="card-employee" class="flex-center"></div><br>
+                <button id="new-research" class="btn-high-emphasis" (click)="newResearch()">Nova pesquisa</button>
+            </div>
+        </div>
+
+        <app-employees-table></app-employees-table>
+    </div>
+</div>
+

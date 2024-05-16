@@ -1,0 +1,41 @@
+<div id="page-container">  
+  <div id="main-container">
+      <div class="card">
+          <div class="container">
+              <div class="flex-center">
+                  <img src="../../../assets/imgs/logo-dummy.png" alt="Logo Dummy" style="height: 4rem">
+                  <h1 style="font-size: 2rem; margin-left: 1rem; font-weight: normal">Dummy Rest API</h1>
+              </div><br>
+  
+              <h2 style="font-size: 3rem; font-weight: normal; padding-block: 0.5rem">Sign in</h2><br>
+              <p style="line-height: 2rem; opacity: 0.8; font-size: 1.2rem">Bem-vindo(a) de volta!</p>
+          </div>
+  
+          <form id="form-login" class="container">  
+              <label for="fusername">Usuário</label>
+              <input type="text" id="fusername" name="fusername" placeholder="Nome de usuário"><br>
+              <label for="fsenha">Senha</label>
+              <input type="password" id="fsenha" nome="fsenha" placeholder="Senha">
+  
+              <div class="flex-space" style="padding-block: 1rem">
+                  <div>
+                      <label for="checkbox-show-password" class="lbl-checkbox" (click)="showPassword($event)">
+                          <div class="icon-btn">
+                              <input type="checkbox" id="checkbox-show-password" name="checkbox-show-password" />
+                          </div>Mostrar senha
+                      </label>
+                      <label for="checkbox-remember" class="lbl-checkbox">
+                          <div class="icon-btn">
+                              <input type="checkbox" id="checkbox-remember" name="checkbox-remember" />
+                          </div>Lembre-me
+                      </label>
+                  </div>
+                  <button id="forgot-password" class="btn-low-emphasis">Esqueceu a senha?</button>
+              </div><br>
+  
+              <button id="btn-login" class="btn-high-emphasis" (click)="login($event)">Entrar</button>
+              <button id="btn-cadastro" class="btn-low-emphasis">Não possuo conta</button>
+          </form><br>
+      </div>
+  </div>
+</div>

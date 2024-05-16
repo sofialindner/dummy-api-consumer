@@ -1,0 +1,24 @@
+<div class="card">
+    <h2>Funcionários</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Salário</th>
+            <th>Idade</th>
+          </tr>
+        </thead>
+        <tbody  style="font-weight: 350;">
+          @for (e of employees; track e.id; let i = $index) {
+            <tr>
+              <td style="font-weight: 600; opacity: 0.6">{{e.id}}</td>
+              <td>{{e.employee_name}}</td>
+              <td>R$ {{e.employee_salary}}</td>
+              <td>{{e.employee_age}}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+</div>
+

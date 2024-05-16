@@ -1,0 +1,35 @@
+.card {
+  height: fit-content;
+  margin-left: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+td, th {
+  text-align: left;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+}
+
+tr{
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-block: 1rem;
+  text-align: left;
+  background-color: var(--main-blue);
+  font-weight: normal;
+  color: white;
+}
+
+
+

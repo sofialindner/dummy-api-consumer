@@ -1,0 +1,48 @@
+nav {
+    width: 15rem;
+    height: 100%;
+    background-color: white;
+    border: 0.1rem solid #dcdeea;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    list-style-type: none;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.hover-div {
+    height: 44.5px;
+    width: 0.3rem;
+    background-color: var(--main-blue);
+}
+
+img {
+    padding-inline: 1rem;
+    opacity: 0.8;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 0.1rem solid #dcdeea;
+}
+
+li:hover {
+    background-color: rgba(66, 66, 73, 0.125);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}

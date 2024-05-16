@@ -1,0 +1,90 @@
+* {
+    font-size: 1.1rem;
+}
+
+#page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    color:black;
+    width: 65%;
+    padding: 3.5rem;
+    border-radius: 1.5rem;
+}
+
+.container {
+    width: 50%;
+}
+
+#forgot-password:hover {
+    opacity: 1;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.lbl-checkbox {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 300;
+    transition: 0.4s;
+}
+
+div.icon-btn {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.7rem;
+    margin-right: 0.2rem;
+    align-items: center;
+}
+  
+#form-login input[type=checkbox] {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 0.05rem solid black;
+    border-radius: 0.2rem;
+}
+
+#form-login input[type=checkbox]:checked {
+    background: var(--main-blue) url("../../../assets/imgs/checkmark-icon.png") no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+#forgot-password {
+    color: var(--main-blue);
+    width: fit-content;
+    font-weight: 600;
+    border: none;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+#btn-login, #btn-cadastro {
+    width: 100%;
+    height: 3.5rem;
+    margin-block: 0.5rem;
+}
+
+#btn-cadastro {
+    color: var(--main-blue);
+    border: 1.5px solid var(--main-blue);
+}
+
+#btn-login {
+    background-color: var(--main-blue);
+}

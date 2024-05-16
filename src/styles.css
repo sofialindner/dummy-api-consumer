@@ -1,0 +1,158 @@
+:root {
+  font-size: 1.8vh;
+  --main-blue: rgb(64, 177, 173);
+}
+
+* {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(232, 233, 241);
+}
+
+button {
+  width: 8.8rem;
+  height: 3.3rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  opacity: 0.9;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn-high-emphasis {
+  border: none;
+  background-color: var(--main-blue);
+  color: white;
+  opacity: 0.9;
+}
+
+.btn-low-emphasis {
+  background-color: transparent;
+  border: 1.5px solid black;
+  color: black;
+}
+
+.btn-low-emphasis:hover {
+  background-color: rgba(0, 0, 0, 0.079);
+}
+
+.btn-high-emphasis:hover {
+  opacity: 1;
+}
+
+.icon-btn * {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-btn {
+  padding-inline: 0.8rem;
+  padding-block: 0.5rem;
+  border-radius: 2rem;
+  transition: 0.4s;
+}
+
+.icon-btn:hover {
+  background-color: rgba(0, 0, 0, 0.056);
+}
+
+input {
+  color:black;
+  background-color: #eae9e9;
+  border: none;
+  border-bottom: 3px solid #eae9e9;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 3px solid  var(--main-blue);
+}
+
+hr {
+  opacity: 0.4;
+}
+
+.icon {
+  height: 2rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#page-container {
+  display: flex;
+  min-height: 100vh;
+  width: auto;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#card-employee img {
+  height: 8rem;
+  padding-inline: 1rem;
+}
+
+#card-employee p {
+  padding: 2rem;
+}
+
+#employee-info {
+  border-spacing: 0.8rem;
+}
+
+.thead {
+  text-align: center;
+  padding-inline: 1.5rem;
+  padding-block: 0.25rem;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.071);
+  border-radius: 2rem;
+}
+
+.tbody {
+  text-align: left;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 40rem;
+  height: fit-content;
+  padding: 1.5rem;
+  margin-block: 6rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1.2rem;
+}
+
+.card h2 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}

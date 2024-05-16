@@ -1,0 +1,29 @@
+<div id="page-container">
+    <app-sidebar></app-sidebar>
+    
+    <div id="main-container">
+        <div class="card">
+            <h2 style="text-align: left">Novo funcionário</h2>
+            <hr><br>
+            
+            <form id="employee-form">
+                <label for="id-input">ID 
+                    <input [(ngModel)]="employee.id" type="number" id="id-input" name="id-input" placeholder="Número de identificação">
+                </label>
+                <label for="name-input">Nome 
+                    <input [(ngModel)]="employee.employee_name" type="text" id="name-input" name="name-input" placeholder="Nome completo do funcionário">
+                </label>
+                <label for="salary-input">Salário
+                    <input [(ngModel)]="employee.employee_salary" type="number" id="salary-input" name="salary-input" placeholder="Salário">
+                </label>
+                <label for="age-input">Idade
+                    <input [(ngModel)]="employee.employee_age" type="number" id="age-input" name="age-input" placeholder="Idade">
+                </label>
+                <button id="create-btn" class="btn-high-emphasis" (click)="createEmployee($event)">Criar</button>
+            </form>
+        </div>
+    
+        <app-employees-table></app-employees-table>
+    </div>
+</div>
+

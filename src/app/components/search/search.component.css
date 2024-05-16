@@ -1,0 +1,38 @@
+#barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 2rem;
+    width: 90%;
+    background-color: #4ca7a734;
+    border: none;
+}
+
+#card-employee {
+    text-align: center;
+    font-weight: 300;
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0.8rem;
+}
+
+#input-pesquisa {
+    width: 85%;
+    background: none;
+    margin: 0;
+    padding: 0;
+    padding-block: 1.4rem;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#input-pesquisa::placeholder {
+    color: rgba(0, 0, 0, 0.485);
+}
+
+#new-research {
+    width: fit-content;
+    visibility: hidden;
+}

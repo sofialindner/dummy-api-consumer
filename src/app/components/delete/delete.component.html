@@ -1,0 +1,21 @@
+<div id="page-container">
+    <app-sidebar></app-sidebar>
+
+    <div id="main-container">
+        <div class="card">
+            <h2>Excluir</h2>
+            <hr><br>
+
+            <form id="delete-form" style="text-align: right">
+                <label for="input-delete" class="flex-space">Funcionário   
+                    <input id="input-delete" type="search" placeholder="Número de ID do Funcionário">
+                </label>
+                <button (click)="deleteEmployee()" class="btn-high-emphasis">Excluir</button>
+            </form>
+        </div>
+
+        <app-employees-table></app-employees-table>
+    </div>
+</div>
+
+
